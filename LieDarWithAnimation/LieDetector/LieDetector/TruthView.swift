@@ -12,7 +12,7 @@ struct TruthView: View {
     @State private var isPressed = false
     @State private var isReleased = false
     @State private var randomCount = Int.random(in: 0...4)
-    @State private var sentences = ["Yes, yes, yes! This person serve facts only.", "Facts are facts. What is true is true, and it does not need decoration, period!", "A trustworthy and worth friend (worth than 1000 your fake friends). Yes you could tell them everything, include your darkest secret 🤭.", "There is beauty in truth, even if it's painful.", "- 20 % truth, 80% Super Truth 👍"]
+    @State private var sentences = ["Yes, yes, yes! This person serve facts only.", "Facts are facts. What is true is true, and it does not need decoration, period!", "A trustworthy and a worthy friend. (worth more than 1000 of your fake friends). Yes you could tell them everything, include your darkest secret 🤭.", "There is beauty in truth, even if it's painful.", "20 % truth, 80% Super Truth 👍"]
     @Binding var speechToText: String
     
     

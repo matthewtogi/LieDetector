@@ -12,7 +12,7 @@ struct LieView: View {
     @State private var isPressed = false
     @State private var isReleased = false
     @State private var randomCount = Int.random(in: 0...4)
-    @State private var sentences = ["If you plan to deceive, ain’t no way you can run away from Liedar, your ultimate truth serum. Now go tell them the truth 😉.", "I'm not upset that you lied to me, I'm upset that from now on I can't believe you. ― Friedrich Nietzsche", "You may tell the greatest lies and wear a brilliant disguise, but you can't escape Liedar.", "Boohoo! Liar!", "Some liars are so expert, but not in front of Liedar!"]
+    @State private var sentences = ["If you plan to deceive, ain’t no way you can run away from Liedar, your ultimate truth serum. Now go tell them the truth 😉.", "Friedrich Nietzsche once said, I'm not upset that you lied to me, I'm upset that from now on I can't believe you.", "You may tell the greatest lies and wear a brilliant disguise, but you can't escape Liedar.", "Boohoo! Liar!", "Some liars are so expert, but not in front of Liedar!"]
     @Binding var speechToText: String
     
     
