@@ -11,11 +11,12 @@
 		348A68BD29CD87860001AF1D /* LottieLoopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A68BC29CD87860001AF1D /* LottieLoopView.swift */; };
 		348A68BF29CD87960001AF1D /* AnimationTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A68BE29CD87960001AF1D /* AnimationTestView.swift */; };
 		348A68C229CD87AC0001AF1D /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 348A68C129CD87AC0001AF1D /* Lottie */; };
-		348A68C429CD87E20001AF1D /* Heart Rate.json in Resources */ = {isa = PBXBuildFile; fileRef = 348A68C329CD87E20001AF1D /* Heart Rate.json */; };
 		348A68C629CD88440001AF1D /* Heart Rate Clean.json in Resources */ = {isa = PBXBuildFile; fileRef = 348A68C529CD88440001AF1D /* Heart Rate Clean.json */; };
 		348A68C829CD89040001AF1D /* play-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 348A68C729CD89040001AF1D /* play-button.png */; };
 		348A68CC29CD8A8A0001AF1D /* MoonBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 348A68C929CD897D0001AF1D /* MoonBold.otf */; };
 		348A68CD29CD8A8D0001AF1D /* MoonLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 348A68CA29CD897D0001AF1D /* MoonLight.otf */; };
+		348A68CF29CEE60D0001AF1D /* Wave.json in Resources */ = {isa = PBXBuildFile; fileRef = 348A68CE29CEE60D0001AF1D /* Wave.json */; };
+		348A68D529CEE9240001AF1D /* Confetti.json in Resources */ = {isa = PBXBuildFile; fileRef = 348A68D429CEE9240001AF1D /* Confetti.json */; };
 		34C81B4D29C888BC008F8610 /* ButtonPressActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C81B4C29C888BC008F8610 /* ButtonPressActions.swift */; };
 		D95CE6EA29C8241B00E6984D /* LieDetectorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95CE6E929C8241B00E6984D /* LieDetectorApp.swift */; };
 		D95CE6EC29C8241B00E6984D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95CE6EB29C8241B00E6984D /* ContentView.swift */; };
@@ -50,12 +51,13 @@
 		348A68BA29CD877F0001AF1D /* LottieButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LottieButton.swift; sourceTree = "<group>"; };
 		348A68BC29CD87860001AF1D /* LottieLoopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LottieLoopView.swift; sourceTree = "<group>"; };
 		348A68BE29CD87960001AF1D /* AnimationTestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationTestView.swift; sourceTree = "<group>"; };
-		348A68C329CD87E20001AF1D /* Heart Rate.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Heart Rate.json"; sourceTree = "<group>"; };
 		348A68C529CD88440001AF1D /* Heart Rate Clean.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Heart Rate Clean.json"; sourceTree = "<group>"; };
 		348A68C729CD89040001AF1D /* play-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-button.png"; sourceTree = "<group>"; };
 		348A68C929CD897D0001AF1D /* MoonBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MoonBold.otf; sourceTree = "<group>"; };
 		348A68CA29CD897D0001AF1D /* MoonLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MoonLight.otf; sourceTree = "<group>"; };
 		348A68CB29CD89930001AF1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		348A68CE29CEE60D0001AF1D /* Wave.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Wave.json; sourceTree = "<group>"; };
+		348A68D429CEE9240001AF1D /* Confetti.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Confetti.json; sourceTree = "<group>"; };
 		34C81B4C29C888BC008F8610 /* ButtonPressActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonPressActions.swift; sourceTree = "<group>"; };
 		D95CE6E629C8241B00E6984D /* LieDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LieDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D95CE6E929C8241B00E6984D /* LieDetectorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LieDetectorApp.swift; sourceTree = "<group>"; };
@@ -129,8 +131,9 @@
 				348A68BA29CD877F0001AF1D /* LottieButton.swift */,
 				348A68BC29CD87860001AF1D /* LottieLoopView.swift */,
 				348A68BE29CD87960001AF1D /* AnimationTestView.swift */,
-				348A68C329CD87E20001AF1D /* Heart Rate.json */,
 				348A68C529CD88440001AF1D /* Heart Rate Clean.json */,
+				348A68CE29CEE60D0001AF1D /* Wave.json */,
+				348A68D429CEE9240001AF1D /* Confetti.json */,
 				348A68C929CD897D0001AF1D /* MoonBold.otf */,
 				348A68CA29CD897D0001AF1D /* MoonLight.otf */,
 				348A68C729CD89040001AF1D /* play-button.png */,
@@ -279,8 +282,9 @@
 			files = (
 				348A68C629CD88440001AF1D /* Heart Rate Clean.json in Resources */,
 				348A68CD29CD8A8D0001AF1D /* MoonLight.otf in Resources */,
+				348A68D529CEE9240001AF1D /* Confetti.json in Resources */,
 				D95CE6F129C8241C00E6984D /* Preview Assets.xcassets in Resources */,
-				348A68C429CD87E20001AF1D /* Heart Rate.json in Resources */,
+				348A68CF29CEE60D0001AF1D /* Wave.json in Resources */,
 				348A68CC29CD8A8A0001AF1D /* MoonBold.otf in Resources */,
 				D95CE6EE29C8241C00E6984D /* Assets.xcassets in Resources */,
 				348A68C829CD89040001AF1D /* play-button.png in Resources */,

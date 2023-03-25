@@ -42,7 +42,7 @@ struct ContentView: View {
                         .font(Font.custom("Moon Bold", size: 58))
                         .foregroundColor(Color(.white))
                         .fontWeight(.bold)
-                        
+                    
                     
                     
                     if showNextViewRNG == 1{
@@ -51,15 +51,21 @@ struct ContentView: View {
                                 Image("play-button")
                                     .resizable()
                                     .frame(width: 200, height: 200)
-                                    
-                                
-                                
+                                //                                ZStack{
+                                //                                    LottieLoopView(animationName: "Wave")
+                                //                                    Image("play-button")
+                                //                                        .resizable()
+                                //                                        .frame(width: 200, height: 200)
+                                //
+                                //                                }
                             }
+                            
+                            
                             Text("Tap again to finish")
                                 .foregroundColor(.black)
                                 .padding()
                                 .font(Font.custom("Moon Bold", size: 22))
-                           
+                            
                             
                         }
                         
@@ -70,7 +76,14 @@ struct ContentView: View {
                                 Image("play-button")
                                     .resizable()
                                     .frame(width: 200, height: 200)
-                                   
+//                                ZStack{
+//                                    LottieLoopView(animationName: "Wave")
+//                                    Image("play-button")
+//                                        .resizable()
+//                                        .frame(width: 200, height: 200)
+//
+//                                }
+                                
                                 
                                 
                             }
@@ -103,7 +116,7 @@ struct ContentView: View {
                             withAnimation(.easeInOut(duration: 0.1)) {
                                 isPressed = true
                                 isRecording = true
-                               
+                                
                                 Timer.scheduledTimer(withTimeInterval: 1.2, repeats: true){
                                     _ in heartRate += randomHeartbeat()
                                 }
@@ -140,7 +153,7 @@ struct ContentView: View {
                                 Text("\(heartRate) BPM")
                                     .font(Font.custom("Moon Bold", size: 32))
                                     .foregroundColor(.black)
-                                   
+                                
                             }
                             else{
                                 Text("- BPM")
@@ -152,13 +165,13 @@ struct ContentView: View {
                         }
                     }
                     .padding(30)
-//                    .background(.gray.opacity(0.4))
+                    //                    .background(.gray.opacity(0.4))
                     .frame(height: 100)
                     .cornerRadius(20)
                     .padding(.top, 30)
                     .padding(.bottom, 90)
                     
-                   
+                    
                     Text("\(speechToText)")
                         .foregroundColor(Color(.gray))
                         .frame(maxWidth: 350)
@@ -166,7 +179,7 @@ struct ContentView: View {
                     
                     
                 }
-               
+                
                 
             }
             

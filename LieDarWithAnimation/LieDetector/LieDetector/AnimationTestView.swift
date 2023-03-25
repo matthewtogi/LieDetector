@@ -9,29 +9,8 @@ import SwiftUI
 
 struct AnimationTestView: View {
     var body: some View {
-        VStack{
-            ZStack{
-//                LottieLoopView(animationName: "Background")
-//                LottieButton(animationName: "Button Wave")
-//                ZStack{
-//                    LottieLoopView(animationName: "Rate Motion")
-//                    LottieLoopView(animationName: "Heart")
-//
-//                }
-//                Text("----------")
-//
-//                Text("----------")
-//                ZStack{
-//                    LottieLoopView(animationName: "Heart Rate")
-
-//                }
-//
-//                Text("----------")
-//                LottieLoopView(animationName: "Wave")
-//                Text("----------")
-                
-            }
-        }
+        LottieLoopView(animationName: "Truth Screen")
+    
     }
     
     struct AnimationTestView_Previews: PreviewProvider {

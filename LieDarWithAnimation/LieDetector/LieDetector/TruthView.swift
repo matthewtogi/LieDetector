@@ -11,6 +11,8 @@ struct TruthView: View {
     @State private var heartRate = Int.random(in: 70...130)
     @State private var isPressed = false
     @State private var isReleased = false
+    @State private var randomCount = Int.random(in: 0...4)
+    @State private var sentences = ["Yes, yes, yes! This person serve facts only.", "Facts are facts. What is true is true, and it does not need decoration, period!", "A trustworthy and worth friend (worth than 1000 your fake friends). Yes you could tell them everything, include your darkest secret 🤭.", "There is beauty in truth, even if it's painful.", "- 20 % truth, 80% Super Truth 👍"]
     @Binding var speechToText: String
     
     
@@ -20,6 +22,8 @@ struct TruthView: View {
                 Color.green
                     .edgesIgnoringSafeArea(.all)
                     .opacity(1)
+                
+                LottieLoopView(animationName: "Confetti")
                 
                 VStack{
                     Text("This person is telling the")
@@ -42,7 +46,7 @@ struct TruthView: View {
                             .padding(.bottom, 5)
                             .italic()
                         
-                        Text("This friend of yours is a trustworthy person. You could tell them everything, include your darkest secret 🤪")
+                        Text("\(sentences[randomCount])")
                             .foregroundColor(Color(.white))
                             .fontWeight(.bold)
                             .font(.system(size: 20))
