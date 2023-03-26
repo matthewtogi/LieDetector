@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Speech
+import AVFoundation
 
 struct ContentView: View {
     @State private var heartRate = Int.random(in: 70...110)
@@ -15,14 +16,29 @@ struct ContentView: View {
     @State private var hasRecorded = false
     @State private var showNextViewRNG = 0
     @State private var buttonTapCount = 0
-    
     @State private var speechToText = ""
-    
     @State private var speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "en-US"))!
     @State private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
     @State private var recognitionTask: SFSpeechRecognitionTask?
     @State private var audioEngine = AVAudioEngine()
     
+    var permission: Void {
+        switch AVAudioSession.sharedInstance().recordPermission {
+        case .granted:
+            print("Permission granted")
+        case .denied:
+            print("Permission denied")
+        case .undetermined:
+            print("Request permission here")
+            AVAudioSession.sharedInstance().requestRecordPermission({ granted in
+                // Handle granted
+            })
+        @unknown default:
+            print("Unknown case")
+        }
+        
+        
+    }
     
     var body: some View {
         NavigationView{
@@ -33,6 +49,7 @@ struct ContentView: View {
                 
                 LottieLoopView(animationName: "Heart Rate Clean")
                     .padding(.top, 300)
+                
                 VStack{
                     
                     Text("Team 31")
@@ -76,13 +93,13 @@ struct ContentView: View {
                                 Image("play-button")
                                     .resizable()
                                     .frame(width: 200, height: 200)
-//                                ZStack{
-//                                    LottieLoopView(animationName: "Wave")
-//                                    Image("play-button")
-//                                        .resizable()
-//                                        .frame(width: 200, height: 200)
-//
-//                                }
+                                //                                ZStack{
+                                //                                    LottieLoopView(animationName: "Wave")
+                                //                                    Image("play-button")
+                                //                                        .resizable()
+                                //                                        .frame(width: 200, height: 200)
+                                //
+                                //                                }
                                 
                                 
                                 
@@ -96,6 +113,7 @@ struct ContentView: View {
                         
                     }
                     else{
+                        
                         ZStack {
                             Button{
                                 
@@ -112,11 +130,10 @@ struct ContentView: View {
                             //taroh action dsni
                         }
                         .pressEvents {
-                            
                             withAnimation(.easeInOut(duration: 0.1)) {
+                                
                                 isPressed = true
                                 isRecording = true
-                                
                                 Timer.scheduledTimer(withTimeInterval: 1.2, repeats: true){
                                     _ in heartRate += randomHeartbeat()
                                 }
@@ -127,6 +144,7 @@ struct ContentView: View {
                                 isPressed = false
                                 isRecording = false
                                 showNextViewRNG = Int.random(in: 1...2)
+                                
                                 startRecording()
                                 
                             }
@@ -138,9 +156,6 @@ struct ContentView: View {
                             .padding()
                         
                     }
-                    
-                    
-                    
                     
                     
                     HStack(spacing: 15){
@@ -169,17 +184,18 @@ struct ContentView: View {
                     .frame(height: 100)
                     .cornerRadius(20)
                     .padding(.top, 30)
-                    .padding(.bottom, 90)
+                    .padding(.bottom, 100)
                     
                     
-                    Text("\(speechToText)")
-                        .foregroundColor(Color(.gray))
-                        .frame(maxWidth: 350)
-                        .italic()
+                    
                     
                     
                 }
-                
+                Text("\(speechToText)")
+                    .foregroundColor(Color(.gray))
+                    .frame(maxWidth: 350)
+                    .padding(.top, 500)
+                    .italic()
                 
             }
             
